@@ -26,7 +26,7 @@ const header = (props) => {
                 fill="#45434D"
               ></path>
             </svg>
-            <span className="cart-count">2</span>
+            <span className="cart-count">{props.cart}</span>
           </div>
           <div className="exc">
             <i className="fas fa-exclamation-circle"></i>

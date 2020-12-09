@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { useEffect, useState } from 'react';
-import './Smothies.css';
+import './Smoothies.css';
 const Smoothies = (props) => {
   const [closedState, setClosedState] = useState(true);
   const [productsState, setProductsState] = useState([
@@ -82,7 +82,14 @@ const Smoothies = (props) => {
             <div className="products-container">
               {cat.catProducts.map((product, index) => {
                 return (
-                  <div className="product-container" key={index}>
+                  <div
+                    className="product-container"
+                    key={index}
+                    style={{ cursor: 'pointer' }}
+                    onClick={() => {
+                      props.addToCart(props.cart + 1);
+                    }}
+                  >
                     <div className="product-image">
                       <img
                         src={product.img}
