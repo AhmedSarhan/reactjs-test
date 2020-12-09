@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.css';
 import Header from './Components/Header/Header';
 import Smothies from './Components/Smothies/Smothies';

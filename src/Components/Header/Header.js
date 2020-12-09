@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { logDOM } from '@testing-library/react';
 import './Header.css';
 
