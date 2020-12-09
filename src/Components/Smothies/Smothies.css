@@ -1,0 +1,85 @@
+/* the smoothies */
+
+.products {
+    max-width: 404px;
+    margin: 20px auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+/* the smoothies section header */
+
+.category-container {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    color: #535c68;
+    margin-top: 20px;
+}
+
+.category-name {
+    grid-area: 1 / 1 / 2 / 2;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.chevron {
+    grid-area: 1 / 4 / 2 / 5;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* the smoothies display */
+
+.product-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0px 0px;
+    gap: 0px 0px;
+}
+
+.product-img {
+    /* grid-area: 1 / 1 / 2 / 2; */
+}
+
+.product-image img {
+    border-radius: 10px;
+}
+
+.product-name {
+    /* grid-area: 1 / 2 / 2 / 4; */
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 5px;
+}
+
+.product-price {
+    /* grid-area: 1 / 4 / 2 / 5; */
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 5px;
+}
+
+.product-price span {
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #565dc5;
+    background-color: #edf5ff;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+@media (max-width: 930px) {
+    .logo-name {
+        grid-area: 1 / 2 / 3 / 3;
+    }
+}
